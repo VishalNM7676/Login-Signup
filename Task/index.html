@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Login || Signup</title>
+</head>
+
+<body>
+  <section id="header">
+    <div class="topButtons">
+      <button class="btn signInBtn active">Log In</button>
+      <button class="btn signUpBtn">Register</button>
+    </div>
+
+    <div class="container-wrapper">
+      <div class="container signIn-block active">
+        <form id="form" class="sign-in-form">
+          <h2>Sign In</h2>
+          <div id="sign">
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input type="text" id="email" class="email-validation" placeholder="Enter Email" />
+              <span class="email-errorValidation error"></span>
+            </div>
+            <div class="form-control">
+              <label for="password">Password</label>
+              <input type="password" id="password" class="password-value1" placeholder="Enter password" />
+              <span class="password-error1 error"></span>
+              <i class='fas fa-check-circle icon'></i>
+            </div>
+            <button class="signBtn btn" type="submit">Sign In</button>
+          </div>
+        </form>
+      </div>
+      <div class="container register-block">
+        <form class="sign-up-form">
+          <h2>Register With Us</h2>
+
+          <div id="fullName">
+            <div class="form-control">
+              <label for="First-Name">Full Name</label>
+              <input type="text" class="first-value" placeholder="First Name" />
+              <span class="firstName-error error"></span>
+              <i class='fas fa-check-circle icon'></i>
+            </div>
+
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input type="text" class="email-value" placeholder="Enter Email" />
+              <span class="email-error error"></span>
+              <i class='fas fa-check-circle icon'></i>
+            </div>
+
+            <div class="form-control">
+              <label for="Phone Number">Phone Number</label>
+              <input type="number" class="phone-value" placeholder="Enter Phone Number" />
+              <span class="phone-error error"></span>
+              <i class='fas fa-check-circle icon'></i>
+            </div>
+
+            <div class="form-control">
+              <label for="password">Password</label>
+              <input type="password" class="password-value" placeholder="Enter password" />
+              <span class="password-error error"></span>
+              <i class='fas fa-check-circle icon'></i>
+            </div>
+
+            <button class="loginBtn btn" type="submit">Submit</button>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</body>
+
+</html>
